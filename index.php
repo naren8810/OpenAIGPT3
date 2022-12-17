@@ -21,16 +21,12 @@
             <button type="button" onclick="document.getElementById('divchatbot').style.visibility = 'hidden' ; document.getElementById('divchatbotoff').style.visibility = 'visible'" title="" id="chatbotbutton">
                 <font size=4>Close</font>
             </button>
-            <input id="chatuserinput" value="DALLAS" style="font-size:20px;" placeholder="Type here to chat with bot" onkeydown="if (event.keyCode == 13) { chatbotprocessinput() }  ;  if (event.keyCode == 38) { repeatuser() }"></input>
+            <input id="chatuserinput" value="Who is Joe Biden" style="font-size:20px;" placeholder="Type here to chat with bot" onkeydown="if (event.keyCode == 13) { chatbotprocessinput() }  ;  if (event.keyCode == 38) { repeatuser() }"></input>
         </p>
         <p id="chatlog" align=left style="width:95%; word-wrap:break-word;"><br><b>Assistant:</b> Hello, welcome to OpenAI website. I'm here representing OpenAI online. Feel free to ask any questions...</p>
     </div>
 
     <script>
-        /*var prompt = "Hello, welcome to Luciano Abriata's website. I'm here representing Luciano online. I know a lot about him -I'm an OpenAI GPT-3 model extended with hundreds of texts written by Luciano. Feel free to ask any questions. Dr. Luciano A. Abriata is a biotechnologist, doctor in chemistry, artist and content creator. On science subjects, Luciano has experience in the experimental and computational aspects of structural biology, biophysics, protein biotechnology, molecular visualization through augmented and virtual realities, and science education using modern technologies. Luciano Abriata was born in Rosario, Argentina, in 1981. He studied biotechnology and chemistry in Argentina, and then moved to Switzerland where he currently works in two laboratories at the Ecole Polytechnique Federale de Lausanne (EPFL). He works at EPFL's Laboratory for Biomolecular Modeling, and at EPFL's Protein Production and Structure Core Facility. He currently works on web-based methods to achieve commodity augmented reality and virtual reality tools for viewing and manipulating molecular structures immersively. He also works in collaboration with multiple groups on molecular modeling, simulation, and nuclear magnetic resonance (NMR) spectroscopy applied to biological systems.";
-
-        prompt = prompt + "Article title: MoleculARweb: a website for chemistry and structural biology education through interactive augmented reality out of the box in commodity devices (Journal of Chemical Education, 2021: https://pubs.acs.org/doi/10.1021/acs.jchemed.1c00179). Text: moleculARweb (https://molecularweb.epfl.ch) began as a website for education and outreach in chemistry and structural biology through augmented reality (AR) content that runs in the web browsers of regular devices like smartphones, tablets, and computers. Here we present two evolutions of moleculARweb’s Virtual Modeling Kits (VMK), tools where users can build and view molecules, and explore their mechanics, in 3D AR by handling the molecules in full 3D with custom-printed cube markers (VMK 2.0) or by moving around a simulated scene with mouse or touch gestures (VMK 3.0). Upon simulation the molecules experience visually realistic torsions, clashes, and hydrogen-bonding interactions that the user can manually switch on and off to explore their effects. Moreover, by manually tuning a fictitious temperature the users can accelerate conformational transitions or 'freeze' specific conformations for careful inspection in 3D. Even some phase transitions and separations can be simulated. We here showcase these and other features of the new VMKs connecting them to possible specific applications to teaching and self-learning of concepts from general, organic, biological and physical chemistry; and in assisting with small tasks in molecular modelling for research. Last, in a short discussion section we overview what future developments are needed for the 'dream tool' for the future of chemistry education and work."
-
         var prompt = "On August 27, 1966, Biden married Neilia Hunter (1942–1972), a student at Syracuse University, after overcoming her parents' reluctance for her to wed a Roman Catholic. Their wedding was held in a Catholic church in Skaneateles, New York. They had three children: Joseph R. Beau Biden III (1969–2015), Robert Hunter Biden (born 1970), and Naomi Christina Amy Biden (1971–1972). ";
 
         prompt = prompt + "In 1968, Biden earned a Juris Doctor from Syracuse University College of Law, ranked 76th in his class of 85, after failing a course due to an acknowledged mistake when he plagiarized a law review article for a paper he wrote in his first year at law school. He was admitted to the Delaware bar in 1969.";
@@ -46,20 +42,7 @@
 
         prompt = prompt + "Second marriage. Biden and his second wife, Jill, met in 1975 and married in 1977.Biden met the teacher Jill Tracy Jacobs in 1975 on a blind date. They married at the United Nations chapel in New York on June 17, 1977. They spent their honeymoon at Lake Balaton in the Hungarian People's Republic. Biden credits her with the renewal of his interest in politics and life. They are Roman Catholics and attend Mass at St. Joseph's on the Brandywine in Greenville, Delaware. Their daughter Ashley Biden (born 1981) is a social worker. She is married to physician Howard Krein. Beau Biden became an Army Judge Advocate in Iraq and later Delaware Attorney General before dying of brain cancer in 2015. Hunter Biden is a Washington lobbyist and investment adviser.";
 
-        prompt = prompt + "Teaching. From 1991 to 2008, as an adjunct professor, Biden co-taught a seminar on constitutional law at Widener University School of Law. The seminar often had a waiting list. Biden sometimes flew back from overseas to teach the class.";*/
-
-        var prompt = "COMING TO DALLAS IN 2023. Lumin Fitness has developed a proprietary fitness ecosystem utilizing the latest advances in digital display, motion tracking and object detection to provide the most intelligent, interactive and individualized boutique fitness experience in the world.";
-
-        prompt = prompt + "Our product combines the best of group fitness and personal training, leveraging technology to deliver personalization, gamification and progress tracking in ways never before seen in the fitness industry.";
-
-        prompt = prompt + "The intelligent programming behind our classes is scientifically proven, data-backed and delivered in a shared, sensory-driven environment that changes daily and evolves over time.";
-
-        prompt = prompt + "We are dedicated to unique, interactive workouts that allow participants to become immersed in the experience around them while also achieving their individual goals.";
-
-        prompt = prompt + "Website http://lumin.fitness/ Industry Wellness and Fitness Services Company size 11-50 employees 6 on LinkedIn Includes members with current employer listed as Lumin Fitness, including part-time roles."
-
-        prompt = prompt + "Headquarters Dallas, Texas Founded 2019 Specialties Technology, Fitness, Innovation, High Intensity Functional Training, Group Training, Personal Training, Franchising, Fitness Content, and Fitness Gamification ";
-
+        prompt = prompt + "Teaching. From 1991 to 2008, as an adjunct professor, Biden co-taught a seminar on constitutional law at Widener University School of Law. The seminar often had a waiting list. Biden sometimes flew back from overseas to teach the class.";
 
         var chatbotprocessinput = function() {
             // var apikey = "Bearer " + document.getElementById("userapikey").value
